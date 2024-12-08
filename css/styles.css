@@ -61,17 +61,6 @@ ol li {
   padding-bottom: 20px;
 }
 
-.file-option {
-  padding-block: 20px;
-}
-
-input[type="file"] {
-  font-size: 1.1rem;
-  width: 100%;
-  border-radius: 6px;
-  border: 1px solid;
-}
-
 input[type="text"] {
   padding-left: 10px;
   font-size: 1.1rem;
@@ -128,9 +117,7 @@ textarea {
 }
 
 .decode,
-.retrieve,
-.file-option,
-.token3 {
+.retrieve {
   display: none;
 }
 
@@ -146,18 +133,16 @@ textarea {
 
 .encode,
 .decode,
-.retrieve,
-.file-option,
-.token3 {
+.retrieve {
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
 
-.show {
+/* .show {
   display: block;
   opacity: 1;
 }
 
 .hide {
   opacity: 0;
-}
+} */

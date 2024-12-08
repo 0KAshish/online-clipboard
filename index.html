@@ -32,13 +32,13 @@
             it in the following text box, or simply copy the text.
           </li>
           <li>
-            Send your text to Online Clipboard by clicking the "Encode" radio
-            button and filling the text box, then submitting it.
+            Send your text to Online Clipboard by clicking the " Send Data or
+            Text" radio button and filling the text box, then submitting it.
           </li>
           <li>
             On the other device, retrieve your text from Online Clipboard by
             entering the provided code in the text box after clicking the
-            "Decode" radio button.
+            "Receive Data or Text" radio button.
           </li>
         </ol>
       </div>
@@ -65,22 +65,6 @@
           <label for="receive">Receive Data or Text</label>
         </div>
 
-        <!-- Send Text or Send File options -->
-        <div class="file-type">
-          <p>Select File Type</p>
-          <input type="radio" name="data-type" id="text" checked />
-          <label for="text">Send Text</label>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-
-          <input type="radio" name="data-type" id="file" />
-          <label for="file">Send File</label>
-          <div class="file-option">
-            <input type="file" />
-          </div>
-        </div>
-
         <!-- TextArea  for sending data-->
         <div class="encode">
           <p><label for="text-data">Data</label></p>
@@ -100,7 +84,7 @@
               class="text-area"
               disabled
             />
-            <i class="fa fa-copy"></i>
+            <i class="fa fa-copy copy-token"></i>
           </div>
         </div>
 
@@ -123,20 +107,7 @@
               class="text-area"
               disabled
             ></textarea>
-            <i class="fa fa-copy"></i>
-          </div>
-        </div>
-        <div class="token3">
-          <p><label for="token3">Token</label></p>
-          <div class="token-container">
-            <input
-              type="text"
-              name="token3"
-              id="token3"
-              class="text-area"
-              disabled
-            />
-            <i class="fa fa-copy"></i>
+            <i class="fa fa-copy copy-text"></i>
           </div>
         </div>
         <button class="btn send">Send</button>
