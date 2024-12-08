@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(247, 241, 230);
+}
+
+.header {
+  padding: 50px 50px;
+  background-color: rgb(90, 90, 90);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: wheat;
+}
+main {
+  background-color: rgb(89, 89, 136);
+  margin: 0 auto;
+  /* width: 1080px;
+  max-width: 80%; */
+  padding: 50px 200px;
+}
+
+.instruction {
+  padding-block: 20px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+h2,
+h3,
+p {
+  padding-block: 10px;
+}
+
+ol {
+  line-height: 1.6;
+  padding-left: 40px;
+}
+ol li {
+  margin-bottom: 8px;
+}
+
+.sr-container {
+  padding-bottom: 20px;
+}
+
+.file-option {
+  padding-block: 20px;
+}
+
+input[type="file"] {
+  font-size: 1.1rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+input[type="text"] {
+  padding-left: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.data-container,
+.token-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+i {
+  font-size: 2rem;
+}
+.fa {
+  font-size: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
+textarea {
+  font-size: 1.1rem;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+  padding-block: 10px;
+}
+
+.btn,
+.fa:hover {
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  background-color: grey;
+  color: wheat;
+  padding-block: 50px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
+
+.decode,
+.retrieve,
+.file-option,
+.token3 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
+
+.encode,
+.decode,
+.retrieve,
+.file-option,
+.token3 {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
